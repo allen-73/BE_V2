@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    margin: 25px 0;
+    padding: 12px;
+    width: 100%;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.btn:hover {
+    background: rgb(9, 255, 0);
+    color: rgb(0, 0, 0);;
+    cursor: pointer;
+    
+}
+
+/* Main Styling */
+html, body {
+    font: 16px/1.2 Segoe UI, sans-serif;
+    background: rgb(80, 159, 190);
+    color: rgb(5, 5, 5);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* Form Styling */
+#form-wrap {
+    margin: auto;
+    background: #cac7cf;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+
+}
+
+#form-wrap h1,
+#form-wrap p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#form-wrap .form-group label {
+    display: block;
+    padding: 15px 0;
+}
+
+#form-wrap .form-group input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gender input {
+    display: inline;
+}
+
+#form-wrap .form-group input:focus {
+    outline: none;
+    border: 1px solid rgb(248, 211, 0);
+}
+
+#form-wrap .bottom-text {
+    font-size: 12px;
+}
+

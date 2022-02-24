@@ -1,0 +1,134 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Rosarivo);
+
+$grayDark: #333 !default;
+$purple: rgb(146, 46, 98) !default;
+$pink: #ea88b7 !default;
+$green: #0c6638 !default;
+$tan: #F2F1ED !default;
+$blue: #2e3092 !default;
+$turquoise: #55989e !default;
+$lightBlue: #a1cada !default;
+
+$bodyBackground:        $tan !default;
+$textColor:             $grayDark !default;
+
+body {
+  background:$bodyBackground;
+  font-family:"Rosarivo";
+  font-size:16px;
+  line-height:1.618;
+  max-width: 300px;
+}
+h3 {
+  font-size:2em;
+  text-align:center;
+  font-weight:400;
+  margin:0 0 0.2em;
+}
+p {
+  margin:0 0 1em;
+}
+
+.sbc-calendar-wrapper {
+  padding:2em;
+  border-radius:0.1em;
+  max-width:20rem;
+  
+  &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 0.4em solid transparent;
+      border-bottom: 0em solid transparent;
+      border-left: 0.7em solid darken($bodyBackground,40%);
+      position: absolute;
+      right: 0;
+      top: -0.3em;
+    }
+}
+
+.sbc-status {
+  display:block;
+  float:left;
+  width:2.65em;
+  height:2.65em;
+  font-size:0.6em;
+}
+.sbc-status-Available {
+  background-color: lighten($turquoise,15%);
+  position:relative;
+}
+
+
+.sbc-status-Booked {
+  background-color: darken($bodyBackground,20%);
+  color:darken($bodyBackground,35%);
+}
+
+
+.sbc-status-Morning {
+  background-color: darken($bodyBackground,25%);
+  position:relative;
+  &:before {
+      width: 0;
+      height: 0;
+      border-bottom: 2.65em solid transparent;
+      border-top: 0em solid transparent;
+      border-left: 2.65em solid lighten($pink,10%);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+}
+
+.sbc-status-Afternoon {
+  background-color: darken($bodyBackground,25%);
+  position:relative;
+  &:before {
+      width: 0;
+      height: 0;
+      border-top: 2.65em solid transparent;
+      border-bottom: 0em solid transparent;
+      border-right: 2.65em solid lighten($purple,25%);
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+}
+
+
+.sbc-calendar-table {
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0.1em;
+  table-layout: fixed;
+  margin: 0;
+  width:100%;
+  padding:0em 0.5em;
+  span {
+    position:relative;
+    z-index:1;
+    cursor:help;
+  }
+  th, td {
+    font-size:0.9em;
+    text-align: center;
+    padding: 0.9em 0;
+    width: 1em;
+    line-height: 1em;
+    vertical-align: middle;
+    border: 0;
+    border-radius:0.2em;
+  }
+}
+
+
+.sbc-key {
+  p {font-size:0.8em;}
+}
